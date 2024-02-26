@@ -52,5 +52,5 @@ Can be found in [RELEASE_NOTES](RELEASE_NOTES.md).
 Please, follow [Code of Conduct](CODE_OF_CONDUCT.md) page.
 
 #### Also if you're interesting - see my other repositories
-*   [Visual](https://github.com/testoncis/visual) - Textual and Visual Comparison Of Images
-*   [ACE](https://github.com/testoncis/ace) - Compares 2 given files. Supported formats are PDF, XLS(X), CSV, JSON, TXT 
+*   [Visual](https://visual.testonics.in/) - Textual and Visual Comparison Of Images
+*   [ACE](https://ace.testonics.in/) - Compares 2 given files. Supported formats are PDF, XLS(X), CSV, JSON, TXT 
