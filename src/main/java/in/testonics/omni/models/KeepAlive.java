@@ -2,18 +2,17 @@ package in.testonics.omni.models;
 
 import java.awt.*;
 
-public class MouseMover {
+public class KeepAlive {
 
     public static void keepAliveByMouseMove() throws Exception {
-        System.out.println("Keep Alive utility will stop after 10 seconds by default. Pass the timeoutInSeconds parameter to customize");
-        keepAliveByMouseMove(10);
+        int defaultTimeInSeconds = 3600;
+        System.out.println("Keep Alive utility will stop after " + defaultTimeInSeconds + " seconds by default. Pass the timeoutInSeconds parameter to customize.");
+        keepAliveByMouseMove(defaultTimeInSeconds);
     }
 
     public static void keepAliveByMouseMove(int timeoutInSeconds) throws Exception {
-        keepAliveByMouseMove(timeoutInSeconds,5);
-    }
-
-    public static void keepAliveByMouseMove(int timeoutInSeconds, int moveIntervalInSeconds) throws Exception {
+        System.out.println("Keep Alive utility started with a timeout of " + timeoutInSeconds + " seconds");
+        int moveIntervalInSeconds = 5;
         long sleepTime = moveIntervalInSeconds* 1000L;
         Robot robot = new Robot();
         long currentTimeInMillis = System.currentTimeMillis();
