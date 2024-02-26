@@ -1,4 +1,4 @@
-## About
+## Keep Alive
 Keeps the device awake (Stop from falling asleep) without changing any configuration
 
 *   Used the mouse movement feature to keep the device active to keep your automated tests running
