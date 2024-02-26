@@ -31,34 +31,14 @@ compile 'in.testonics.omni:keepalive:1.0.0'
 
 #### Keep your device awake (Strops from Sleeping) programmatically
 ```java
-        //Sets the object of Visual Comparison
-        VisualComparison visualComparison = new VisualComparison();
-
-        //By default, result file will be saved at root location of the project
-        File file1 = new File(".\\ImageExpected.png");
-        File file2 = new File(".\\ImageActual.png");
-        VisualComparisonResult visualComparisonResult = visualComparison.compareImages(file1, file2);
-```
-## Demo
-Demo shows how `Visual` works.
- 
-Expected Image
-![expected](src/test/resources/TestData/ImageExpected.png)
-
-Actual Image
-![actual](src/test/resources/TestData/ImageActual.png)
-
-Result
-![result](src/test/resources/TestData/ImageResult.png)
-
-Print the Failures To Assert
-```java
         //Import the utility
         import static in.testonics.omni.models.KeepAlive.keepAliveByMouseMove;
 
-        //Optional Parameter: timeoutInSeconds
-        //if not provided, utility will stop after 1 hour
-        keepAliveByMouseMove(10); 
+        public class KeepAliveTest {
+            //Optional Parameter: timeoutInSeconds
+            //if not provided, utility will stop after 1 hour
+            keepAliveByMouseMove(int timeoutInSeconds);
+        }
 ```
 
 ## License
@@ -73,3 +53,4 @@ Please, follow [Code of Conduct](CODE_OF_CONDUCT.md) page.
 
 #### Also if you're interesting - see my other repositories
 *   [Visual](https://github.com/testoncis/visual) - Textual and Visual Comparison Of Images
+*   [ACE](https://github.com/testoncis/ace) - Compares 2 given files. Supported formats are PDF, XLS(X), CSV, JSON, TXT 
